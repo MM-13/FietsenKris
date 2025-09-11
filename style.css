@@ -1,0 +1,269 @@
+/* CSS Document */
+
+/* Reset & Base Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #2c3e50;
+  /*background-image: url("Images/Website/background.png");*/
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  padding: 1rem 2rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  padding: 0 2rem;
+}
+
+.header-logo {
+  max-width: 700px;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto 1rem auto;
+  object-fit: contain;
+}
+
+/* Navigation Bar */
+nav {
+  background-color: rgba(52,73,94,0.49);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #2c3e50;
+  border-radius: 4px;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  color: #2c3e50;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* Homepage Grid Layout */
+.homepage-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0rem 2rem;
+}
+
+.diensten, .openingsuren {
+  flex: 1;
+  margin: 0;
+}
+
+.diensten ul {
+  list-style: none;
+  padding: 0;
+}
+
+.diensten ul li {
+  margin-bottom: 0.5rem;
+}
+
+.openingsuren table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.openingsuren td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.contact {
+  text-align: center;
+  padding: 0rem 2rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact a {
+  font-weight: bold;
+}
+
+/* Brand Logos Section */
+.brand-logos {
+  padding: 2rem;
+  text-align: center;
+}
+
+.brand-logos h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.logo-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.logo-row img {
+  max-height: 60px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-row img:hover {
+  transform: scale(1.1);
+}
+
+/* Bike pictures gallery as equal squares */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#gallery .square {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* keeps it a perfect square */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+#gallery .square iframe {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#gallery .square img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Contact Info */
+a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Map */
+iframe {
+  margin-top: 1rem;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #ecf0f1;
+  text-align: center;
+  padding: .5rem;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+	
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-logo {
+    margin: 0 auto 1rem auto;
+  }
+	
+  .homepage-grid {
+  display: grid;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  }
+  
+  #gallery {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+}
