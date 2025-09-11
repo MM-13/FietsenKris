@@ -1,7 +1,7 @@
 // Java Scrips
 /*async function loadDriveImages() {
     const folderId = "1lUPw_VSiS0ATBQ7QaYnQJMbXT5v8K6ey"; // your Drive folder
-    const apiKey = "AIzaSyB-yi6iDH50MbClc21JHwBnJQosJ_j6FGE"; // replace with your real key
+    const apiKey = "..."; // replace with your real key
     const url = `https://www.googleapis.com/drive/v3/files?q='${folderId}'+in+parents and trashed=false&key=${apiKey}&fields=files(id,name,mimeType)`;
 
     try {
@@ -37,7 +37,7 @@ window.onload = loadDriveImages; */
 
 async function loadDriveImages() {
     const folderId = "1lUPw_VSiS0ATBQ7QaYnQJMbXT5v8K6ey"; // your folder
-    const apiKey = "AIzaSyB-yi6iDH50MbClc21JHwBnJQosJ_j6FGE"; // your real key
+    const apiKey = "..."; // your real key
     const url = `https://www.googleapis.com/drive/v3/files?q='${folderId}'+in+parents and trashed=false&key=${apiKey}&fields=files(id,name,mimeType)`;
 
     try {
