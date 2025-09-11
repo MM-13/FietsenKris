@@ -1,6 +1,6 @@
 async function loadDriveImages() {
     const folderId = "1lUPw_VSiS0ATBQ7QaYnQJMbXT5v8K6ey";
-    const imagePIink = (await fetch("images.txt").text()).trim();
+    const imagePIink = (await (await fetch("images.txt")).text()).trim();
 
     const url = `https://www.googleapis.com/drive/v3/files?q='${folderId}'+in+parents and trashed=false&key=${imagePIink}&fields=files(id,name,mimeType)`;
 
