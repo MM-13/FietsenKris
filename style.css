@@ -165,7 +165,6 @@ ul {
   object-fit: contain;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-  color: #2c3e50;
 }
 
 .logo-row img:hover {
@@ -272,5 +271,16 @@ footer {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
-}
+  }
+
+  .logo-row img {
+    max-height: 100px;
+    max-width: 120px;
+    object-fit: contain;
+  }
+
+  .logo-row img:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+  }
 }
