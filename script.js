@@ -33,7 +33,7 @@
     }
 }
 
-window.onload = loadDriveImages;*/
+window.onload = loadDriveImages; */
 
 async function loadDriveImages() {
     const folderId = "1lUPw_VSiS0ATBQ7QaYnQJMbXT5v8K6ey"; // your folder
