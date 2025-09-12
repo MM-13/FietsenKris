@@ -60,6 +60,10 @@ nav {
   display: inline;
 }
 
+.navbar ul {
+  vertical-align: middle;
+}
+
 .navbar a {
   color: white;
   font-weight: bold;
