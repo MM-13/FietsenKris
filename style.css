@@ -214,6 +214,13 @@ ul {
   object-fit: cover;
 }
 
+#gallery .square img:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+  filter: grayscale(0%);
+  cursor: pointer;
+}
+
 #infoBox {
     position: fixed;
     top: 0;
