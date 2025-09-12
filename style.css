@@ -40,7 +40,7 @@ header p {
 
 /* Navigation Bar */
 nav {
-  background-color: rgba(52,73,94,0.49);
+  background-color: rgba(52, 73, 94, 0.49);
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -103,7 +103,8 @@ ul {
   padding: 0rem 2rem;
 }
 
-.diensten, .openingsuren {
+.diensten,
+.openingsuren {
   flex: 1;
   margin: 0;
 }
@@ -189,13 +190,14 @@ ul {
 
 #gallery .square {
   width: 100%;
-  aspect-ratio: 1 / 1; /* keeps it a perfect square */
+  aspect-ratio: 1 / 1;
+  /* keeps it a perfect square */
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 #gallery .square iframe {
@@ -222,35 +224,36 @@ ul {
 }
 
 #infoBox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
 .info-content {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 90%;
-    max-width: 400px; /* groter scherm */
-    text-align: center;
-    position: relative;
-    box-sizing: border-box;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  /* groter scherm */
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .info-content .close {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 24px;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 /* Contact Info */
@@ -287,7 +290,7 @@ footer {
   section {
     padding: 1rem;
   }
-	
+
   .site-header {
     flex-direction: column;
     text-align: center;
@@ -296,23 +299,23 @@ footer {
   .header-logo {
     margin: 0 auto 1rem auto;
   }
-	
+
   .homepage-grid {
-  display: grid;
-  justify-content: space-between;
-  gap: 2rem;
-  max-width: 1000px;
-  margin: auto;
-  padding: 2rem;
+    display: grid;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
   }
-  
+
   #gallery {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 15px;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
   }
 
   .logo-row img {
@@ -327,22 +330,22 @@ footer {
   }
 
   .info-content {
-        padding: 15px;
-        width: 90%;
-        max-width: 90%;
-    }
+    padding: 15px;
+    width: 90%;
+    max-width: 90%;
+  }
 
-    .info-content h3 {
-        font-size: 1.2em;
-    }
+  .info-content h3 {
+    font-size: 1.2em;
+  }
 
-    .info-content p {
-        font-size: 1em;
-    }
+  .info-content p {
+    font-size: 1em;
+  }
 
-    .info-content .close {
-        font-size: 20px;
-        top: 8px;
-        right: 10px;
-    }
+  .info-content .close {
+    font-size: 20px;
+    top: 8px;
+    right: 10px;
+  }
 }
