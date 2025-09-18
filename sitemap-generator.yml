@@ -1,6 +1,0 @@
-- name: generate-sitemap
-  uses: cicirello/generate-sitemap@v1.10.3
-  with:
-    base-url-path: https://mm-13.github.io/FietsenKris/
-    sitemap-format: xml
-    sitemap-path: sitemap.xml
