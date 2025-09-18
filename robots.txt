@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://mm-13.github.io/FietsenKris/sitemap.xml
